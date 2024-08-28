@@ -1,13 +1,15 @@
 import streamlit as st
 
-# Título del CV y la foto en la parte superior izquierda
+# Título del CV y la imagen desde una URL en la parte superior izquierda
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    # Opción para cargar la imagen
-    uploaded_file = st.file_uploader("Fernanda", type=["png"])
-    if uploaded_file is not None:
-        st.image(uploaded_file, width=150)
+    # Cargar la imagen desde una URL
+    image_url = "https://drive.google.com/file/d/1yB293ZyVrrdyu_4ydurqYF8EoV8vz3Zy/view?usp=sharing=  # Reemplaza con la URL de tu imagen
+    st.image(image_url, width=150)
+
+with col2:
+    st.title("María Fernanda Buck Nuñez")
 
 # Resumen profesional
 st.header("Resumen Profesional")
@@ -49,7 +51,7 @@ with col1:
     - Inglés - Avanzado
     """)
 
-    # Habilidades
+     # Habilidades
     st.header("Habilidades")
     st.markdown("""
     - Toma de Decisiones
