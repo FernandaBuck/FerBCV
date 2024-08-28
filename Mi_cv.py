@@ -4,10 +4,10 @@ import streamlit as st
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image("/Users/fernandabuck/Escritorio/Fernanda.png", width=150)
-
-with col2:
-    st.title("María Fernanda Buck Nuñez")
+    # Opción para cargar la imagen
+    uploaded_file = st.file_uploader("Fernanda", type=["png"])
+    if uploaded_file is not None:
+        st.image(uploaded_file, width=150)
 
 # Resumen profesional
 st.header("Resumen Profesional")
