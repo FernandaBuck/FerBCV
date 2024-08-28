@@ -4,7 +4,7 @@ import streamlit as st
 col1, col2 = st.columns([1, 3])
 
 with col1:
-    st.image("/Users/fernandabuck/Desktop/Fernanda.png", width=150)  # Cambia el nombre de la imagen y la ruta según corresponda
+    st.image("/Users/fernandabuck/Escritorio/Fernanda.png", width=150)
 
 with col2:
     st.title("María Fernanda Buck Nuñez")
